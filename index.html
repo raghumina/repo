@@ -1,0 +1,408 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			body{
+				background-image: url("bounceball.gif");
+				background-repeat: no-repeat;
+				height: 100%;
+			}
+			.responsive {
+				width: 70%;
+				height: auto;
+			  }
+			.wave {
+				animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+				animation-duration: 2.5s;        /* Change to speed up or slow down */
+				animation-iteration-count: infinite;  /* Never stop waving :) */
+				transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+				display: inline-block;
+			  }
+			  
+			  
+			  @keyframes wave-animation {
+				  0% { transform: rotate( 0.0deg) }
+				 10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+				 20% { transform: rotate(-8.0deg) }
+				 30% { transform: rotate(14.0deg) }
+				 40% { transform: rotate(-4.0deg) }
+				 50% { transform: rotate(10.0deg) }
+				 60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+				100% { transform: rotate( 0.0deg) }
+			  }
+
+
+			  .buttons {
+				width: 960px;
+				margin: 0 auto;
+			  }
+			  
+			  .action_btn {
+				display: inline-block;
+				width: calc(50% - 4px);
+				margin: 0 auto;
+			  }
+			  .cent{
+				text-align: center;
+			  }
+			  /**Jumping text**/
+			    .jumping-text {
+				display: inline-block;
+				transition: transform 0.4s;
+				
+			}
+			
+			.jumping-text:hover {
+				transform: translateY(-50px);
+			}
+			@keyframes jump {
+				0% { transform: translateY(0); }
+				50% { transform: translateY(-50px); }
+				100% { transform: translateY(0); }
+			}
+			
+			.jumping-text:hover {
+				animation: jump 0.4s;
+			}
+			/**background**/
+.bg {
+				background-image: url('mine.gif');
+				background-size: cover;
+				background-position: center;
+				height: 100vh; /* 100% of the viewport height */
+			  }
+
+		</style>
+	</head>
+	<body class="is-preload">
+		
+
+		<!-- Wrapper -->
+		<div class="bg">
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+				
+					<div id="intro">
+						<h1>
+						<div class="jumping-text">H</div> 
+						<div class="jumping-text">i</div>
+						<div class="jumping-text">,</div>
+						<div class="jumping-text"><span class="wave">👋</span></div>
+						<div class="jumping-text">M</div>
+						<div class="jumping-text">y</div>
+						<div class="jumping-text">s</div>
+						<div class="jumping-text">e</div>
+						<div class="jumping-text">l</div>
+						<div class="jumping-text">f</div><br>
+						<div class="jumping-text"> R</div>
+						<div class="jumping-text"> a</div>
+						<div class="jumping-text"> g</div>
+						<div class="jumping-text"> h</div>
+						<div class="jumping-text"> u</div>
+
+
+
+
+						</h1>
+						<p> I am a Game Developer and Bioinformatician, Interested in Human Computer Interaction.</p>
+
+						<div class="buttons">
+
+							<div class="action_btn">
+				
+							<button name="submit" class="action_btn submit" type="submit" ><a href="#main" > Projects</a></button>
+							<button name="submit" class="action_btn cancel" type="submit" ><a href="resume.html" >Resume</a></button>
+				
+							<p id="saved"></p>
+				
+							</div>
+				
+						</div>
+
+
+					</div>	
+					</div>
+
+			
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post --
+							<article class="post featured">
+								<header class="major">
+									
+									
+									<h2><a href="sleepy.pdf">Sleepy Game
+										<br>
+										         
+										<a href="sleepy.pdf" class="image main"><img src="sl.gif"  alt=""   width="150" height="500"  /></a>
+										
+									</a></h2>
+									<p>● As part of a larger project with collaboration among multiple organizations to assist patients with
+										mild cognitive impairment or Alzheimer's disease, I prototyped, designed and developed Smartphone and mobile
+										apps to track, monitor and remind the patient about the daily activities around their Sleep schedule. It’s a sponsored
+										project for the Serious Games foundation class.
+										<br>
+										● Tools and Technologies: C#, Unity, Figma, Adobe Photoshop, Git, Github, Visual Studio Code
+										</p>
+								</header>
+								
+								
+								
+								<ul class="actions special">
+									<li><a href="sleepy.pdf" class="button large">More</a></li>
+								</ul>
+							</article>
+							<article class="post featured">
+								<header class="major">
+									
+									<h2><a href="Sanity_Insanity.pdf">Sanity Insanity</a></h2>
+									<br>
+										<br>
+									<a href="Sanity_Insanity.html" class="image main"><img src="sanity.gif" alt=""  width="100" height="400" /></a><br>
+									<p> ● Worked on the design of the cards and board for a paper prototype where players compete to
+										collect most points while promoting positive attitude, mental health awareness among the group as part of the
+										Serious Game Foundation I class.<br>	
+										● Technology and Tool: TableTopia, GIMP, Adobe Photoshop
+										
+										</p>
+								</header>
+							
+								<br>
+								<ul class="actions special">
+									<li><a href="Sanity_Insantiy.html" class="button large">More</a></li>
+								</ul>
+							</article>
+							<article class="post featured">
+								<header class="major">
+									
+									<h2><a href="https://github.com/HanKan7/Game-200---Systems-">Ninja Smashers</a></h2>
+									<br>
+									
+									<a href="https://github.com/HanKan7/Game-200---Systems-" class="image main"><img src="nj.gif" alt=""  width="150" height="500" /></a><br>
+							
+									<p>● Developed a game using Unity 3D as a part of an academic group assignment for the Game
+										Design System class. Fabricated the audio effects and debugged code, resolved the gameplay and the mechanics
+										problems.<br>
+										● Technology and Tool: C#, Unity, Visual Studio Code, Audacity
+
+										</p>
+								</header>
+								
+								<ul class="actions special">
+									<li><a href="https://github.com/HanKan7/Game-200---Systems-" class="button large">More</a></li>
+								</ul>
+							</article>
+
+							<article class="post featured">
+								<header class="major">
+									
+									<h2><a href="https://github.com/raghumina/GAME200-AntSkate">Skate ANTics</a></h2>
+									<br>
+									
+									<a href="https://github.com/raghumina/GAME200-AntSkate" class="image main"><img src="story.gif" alt=""  width="150" height="500" /></a><br>
+								
+									<p> ● Designed user interface, created story narrative, and developed audio effects for a group
+										assignment using Unity 3D game engine. The player controls an ant in a colony, and has to compete and win in the
+										skate competition to save the clan's reputation.
+									<br>●  Tools and Technologies: C#, Unity, Audacity, Visual Studio Code, Github, Pixilart
+<br>
+<br>
+										</p>
+								</header>
+								
+								<ul class="actions special">
+									<li><br></li>
+									<li><a href="https://github.com/raghumina/GAME200-AntSkate" class="button large">More</a></li>
+								</ul>
+							</article>
+
+							<!-- small projects-->
+						<!-- Posts -->
+						<div class="cent">
+						<h2>Projects </h2></div>
+							<section class="posts">
+								<!--sleepy game -->
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="sleepy.pdf">Sleepy Game<br />
+										</a></h2>
+									</header>
+									<a href="sleepy.pdf" class="image fit"><img src="sl.gif" alt=""  width="150" height="450"/></a>
+									
+									<ul class="actions special">
+										<li><a href="sleepy.pdf" class="button">More</a></li>
+									</ul>
+								</article>
+								<!---Sanity Insantiy-->
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="Sanity_Insanity.html">Sanity_Insanity<br />
+										</a></h2>
+									</header>
+									<a href="Sanity_Insanity.html" class="image fit"><img src="sanity.gif" alt=""  width="150" height="450"/></a>
+									
+									<ul class="actions special">
+										<li><a href="Sanity_Insanity.html" class="button">More</a></li>
+									</ul>
+								</article>
+								<!---Ninja smachers-->
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="https://github.com/HanKan7/Game-200---Systems-">Ninja Smachers<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/HanKan7/Game-200---Systems-" class="image fit"><img src="nj.gif
+										" alt=""  width="150" height="450"/></a>
+									
+									<ul class="actions special">
+										<li><a href="https://github.com/HanKan7/Game-200---Systems-" class="button">More</a></li>
+									</ul>
+								</article>
+								<!---Skate antics-->
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="finish the story.pdf">Skate Antics<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/raghumina/GAME200-AntSkate" class="image fit"><img src="story.gif" alt=""  width="150" height="450"/></a>
+									
+									<ul class="actions special">
+										<li><a href="https://github.com/raghumina/GAME200-AntSkate" class="button">More</a></li>
+									</ul>
+								</article>
+
+
+
+
+								<!--finish the story-->
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="finish the story.pdf">Finish the Story<br />
+										</a></h2>
+									</header>
+									<a href="finish the story.pdf" class="image fit"><img src="Screenshot (60).png" alt=""  width="150" height="450"/></a>
+									
+									<ul class="actions special">
+										<li><a href="finish the story.pdf" class="button">More</a></li>
+									</ul>
+								</article>
+								<!--Space shooter-->
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="https://github.com/raghumina/Processing/tree/main/Final_Project">Space Shooter<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/raghumina/Processing/tree/main/Final_Project" class="image fit"><img src="shooting.gif" alt=""   width="150" height="450"/></a>
+									
+									<ul class="actions special">
+										<li><a href="https://github.com/raghumina/Processing/tree/main/Final_Project" class="button">More</a></li>
+									</ul>
+								</article>
+								<!---Tic-Tac-Toe-->
+
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="https://github.com/raghumina/TicTacToe">Tic-Tac-Toe<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/raghumina/TicTacToe" class="image fit"><img src="tictactoe.gif" alt=""   width="150" height="450"/></a>
+									
+									
+						
+									<ul class="actions special">
+										<li><a href="https://github.com/raghumina/TicTacToe" class="button">More</a></li>
+									</ul>
+								</article>
+								<!---Esquiver-->
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="https://github.com/raghumina/Esquiver_Bird">Esquiver<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/raghumina/Esquiver_Bird" class="image fit"><img src="Esquiver.gif" alt=""   width="150" height="450"/></a>
+									
+									<ul class="actions special">
+										<li><a href="https://github.com/raghumina/Esquiver_Bird" class="button">More</a></li>
+									</ul>
+								</article>
+								<!--Snake Game -->
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="https://github.com/raghumina/Snake__Game">Snake Game<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/raghumina/Snake__Game" class="image fit"><img src="snake1.gif" alt=""   width="150" height="450"/></a>
+									
+									
+									<ul class="actions special">
+										<li><a href="https://github.com/raghumina/Snake__Game" class="button">More</a></li>
+									</ul>
+								</article>
+								<!---Bounce the ball-->
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">Bounce Ball<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="bounceball.gif" alt=""  width="150" height="450" /></a>
+									<p><br>
+									<br>
+								<br>
+							<br><br>
+						</p>
+						<br>
+						<br>
+						<!---		<ul class="actions special">
+										<li><a href="#" class="button">More</a></li>
+									</ul>-->
+								</article>
+								
+							</section>
+
+						<!-- Footer -->
+							
+				
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul class="icons alt">
+							
+							
+							<li><a href="#" class="icon brands alt fa fa-linkedin"><span class="label">Linkdlen</span></a></li>
+							<li><a href="https://github.com/raghumina" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
